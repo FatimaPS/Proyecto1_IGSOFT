@@ -1,6 +1,10 @@
 
 package problemas;
 
+/**
+ * 
+ * @author Santiago Estrada hola amigos de you tube
+ */
 
 public class Problemas 
 {
