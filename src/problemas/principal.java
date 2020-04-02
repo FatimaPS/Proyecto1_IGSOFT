@@ -41,13 +41,12 @@ public class principal extends javax.swing.JFrame
             Mongo mongo = new Mongo("LocalHost",27017);
             db = mongo.getDB("proyecto1");
             tabla = db.getCollection("categorias");
+            tabla = db.getCollection("products");
             
         } catch (UnknownHostException ex) {
             Logger.getLogger(principal.class.getName()).log(Level.SEVERE, null, ex);
         }
             
-            
-        
         jTextArea1.setLineWrap(true);
         jTextArea1.setWrapStyleWord(true);
 
@@ -398,16 +397,55 @@ public class principal extends javax.swing.JFrame
     //worldMultiple
     private void opcion4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcion4ActionPerformed
         cambiopanel(problema4);
+        
+        if(jTextArea1.getText() != null) 
+            jTextArea1.setText(" ");
+        
+        
+        DBCollection col = db.getCollection("categorias");
+                BasicDBObject filtro = new BasicDBObject();
+                filtro.put("Titulo", "worldMultiple");
+                DBCursor cursor = tabla.find(filtro);
+             
+                while(cursor.hasNext()){
+                    jTextArea1.setText(jTextArea1.getText()+cursor.next());    
+                }
     }//GEN-LAST:event_opcion4ActionPerformed
 
     //makeBricks
     private void opcion2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcion2ActionPerformed
        cambiopanel(problema2);
+       
+       if(jTextArea1.getText() != null) 
+            jTextArea1.setText(" ");
+        
+        
+        DBCollection col = db.getCollection("categorias");
+                BasicDBObject filtro = new BasicDBObject();
+                filtro.put("Titulo", "makeBricks");
+                DBCursor cursor = tabla.find(filtro);
+             
+                while(cursor.hasNext()){
+                    jTextArea1.setText(jTextArea1.getText()+cursor.next());    
+                }
     }//GEN-LAST:event_opcion2ActionPerformed
 
     //fix45
     private void opcion5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcion5ActionPerformed
        cambiopanel(problema5);
+       
+       if(jTextArea1.getText() != null) 
+            jTextArea1.setText(" ");
+        
+        
+        DBCollection col = db.getCollection("categorias");
+                BasicDBObject filtro = new BasicDBObject();
+                filtro.put("Titulo", "fix45");
+                DBCursor cursor = tabla.find(filtro);
+             
+                while(cursor.hasNext()){
+                    jTextArea1.setText(jTextArea1.getText()+cursor.next());    
+                }
     }//GEN-LAST:event_opcion5ActionPerformed
 
 
