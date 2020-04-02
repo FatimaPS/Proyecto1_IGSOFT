@@ -641,27 +641,32 @@ public class principal extends javax.swing.JFrame
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    // maxmod5
     private void opcion1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcion1ActionPerformed
         cambiopanel(problema1);
         cambiopanel2(problem1);
         
     }//GEN-LAST:event_opcion1ActionPerformed
 
+    //equalsisNot 
     private void opcion3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcion3ActionPerformed
         cambiopanel(problema3);
         cambiopanel2(problem3);
     }//GEN-LAST:event_opcion3ActionPerformed
 
+    //worldMultiple
     private void opcion4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcion4ActionPerformed
         cambiopanel(problema4);
         cambiopanel2(problem4);
     }//GEN-LAST:event_opcion4ActionPerformed
 
+    //makeBricks
     private void opcion2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcion2ActionPerformed
        cambiopanel(problema2);
        cambiopanel2(problem2);
     }//GEN-LAST:event_opcion2ActionPerformed
 
+    //fix45
     private void opcion5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_opcion5ActionPerformed
        cambiopanel(problema5);
        cambiopanel2(problem5);
