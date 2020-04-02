@@ -15,6 +15,9 @@ public class Problemas
     {
          principal pp = new principal();
          pp.setVisible(true);
+         pp.setResizable(false);
+         pp.setTitle("Problemas CodingBat_Proyecto1");
+         
     }
     
 }
