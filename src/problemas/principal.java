@@ -646,6 +646,8 @@ public class principal extends javax.swing.JFrame
         cambiopanel(problema1);
         cambiopanel2(problem1);
         
+        //pryeba1
+        
     }//GEN-LAST:event_opcion1ActionPerformed
 
     //equalsisNot 
